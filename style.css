@@ -13,7 +13,7 @@ body {
 #fretboard {
     position: relative;
     align-self: center;
-    background-image: url("./img/wood.jpg");
+    background-image: url("wood.jpg");
     background-size: contain;
     width: auto;
     height: 40vh;
