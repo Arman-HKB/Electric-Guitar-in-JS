@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5449993dab.js"></script>
+    <title>GuitarJs</title>
+</head>
+<body>
+    <div id="fretboard" class="row">
+        <div class="mark" style="left: 176vh;"></div>
+        <div class="mark" style="left: 140vh;"></div>
+        <div class="mark" style="left: 104vh;"></div>
+        <div class="mark" style="left: 68vh;"></div>
+        <div class="position-absolute d-flex flex-column">
+            <div class="mark" style="top: 10.784313725490197vh; left: 14.285714285714286vh;"></div>
+            <div class="mark" style="top: 25.210084033613445vh; left: 14.285714285714286vh;"></div>
+        </div>
+        
+        <div class="frets d-flex flex-row">
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="string" style="height: 8px;"></div>
+        </div>
+        <div class="frets d-flex flex-row">
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="string" style="height: 7px;"></div>
+        </div>
+        <div class="frets d-flex flex-row">
+            <div class="note col-1"></div>
+            <div class="note col-1"><span class="fret-mark"></span></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="string" style="height: 6px;"></div>
+        </div>
+        <div class="frets d-flex flex-row">
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="string" style="height: 5px;"></div>
+        </div>
+        <div class="frets d-flex flex-row">
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="note col-1"></div>
+            <div class="string" style="height: 4px;"></div>
+        </div>
+        <div class="frets d-flex flex-row">
+            <div class="note col-1"><span class="fret-number">13</span></div>
+            <div class="note col-1"><span class="fret-number">12</span></div>
+            <div class="note col-1"><span class="fret-number">11</span></div>
+            <div class="note col-1"><span class="fret-number">10</span></div>
+            <div class="note col-1"><span class="fret-number">9</span></div>
+            <div class="note col-1"><span class="fret-number">8</span></div>
+            <div class="note col-1"><span class="fret-number">7</span></div>
+            <div class="note col-1"><span class="fret-number">6</span></div>
+            <div class="note col-1"><span class="fret-number">5</span></div>
+            <div class="note col-1"><span class="fret-number">4</span></div>
+            <div class="note col-1"><span class="fret-number">3</span></div>
+            <div class="note col-1"><span class="fret-number">2</span></div>
+            <div class="note col-1"><span class="fret-number">1</span></div>
+            <div class="string" style="height: 3px;"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./guitar.js"></script>
+</body>
+</html>

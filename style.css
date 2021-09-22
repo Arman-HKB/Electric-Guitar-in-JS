@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans, Trebuchet MS';
+}
+
+body {
+    background: rgb(160,240,205);
+    background: linear-gradient(0deg, rgba(160,240,205,1) 0%, rgba(255,240,174,1) 100%);
+}
+
+/* FRET BOARD */
+#fretboard {
+    position: relative;
+    align-self: center;
+    background-image: url("./img/wood.jpg");
+    background-size: contain;
+    width: auto;
+    height: 40vh;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    box-shadow: 1px 6px 10px #111111;
+}
+
+/* NOTES */
+.note {
+    border-right: 15px solid;
+    border-image: linear-gradient(to left, #807f7f, #c5c4c4, #807f7f) 1 100%;
+}
+
+.note:first-child {
+    min-width: 10px;
+    max-width: 50px;
+    flex-grow: O;
+    flex-shrink: 0;
+    justify-content: center;
+    position: relative;
+}
+
+/* STRINGS */
+.string {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    align-self:center!important;
+    pointer-events: none;
+}
+
+.string::before {
+    z-index: 1;
+    content: "";
+    width: 100vw;
+    background-image: url('data:image/gif;base64,R0lGODdhAgAIAOMQAB0aFSUfDyooKTUxJkA6Gk9EJFlPLFRRSGtnZnNpUHRvXIF3bY+Ifp6Xh7Gunby4rywAAAAAAgAIAAAEDHAERV5xpiW20BFABAA7');
+    background-size: contain;
+    box-shadow: 1px 3px 10px #111111;
+    pointer-events: none;
+}
+
+.note:hover ~ .string, .string:hover, .note:hover ~ .mark {
+    animation: vibration 0.3s infinite;
+    transform: translateY(0);
+}
+
+@keyframes vibration {
+    10%, 90% {
+      transform: translateY(-2px);
+    }
+    
+    20%, 80% {
+      transform: translateY(2px);
+    }
+  
+    30%, 50%, 70% {
+      transform: translateY(-2px);
+    }
+  
+    40%, 60% {
+      transform: translateY(2px);
+    }
+}
+
+/* FRETS MARKS */
+.mark{
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 17.92717086834734vh;
+    margin-bottom: auto;
+    background: #c5c4c4;
+}
+
+.mark:hover {
+    pointer-events: none;
+}
+
+/* FRETS NUMBERS */
+.fret-number {
+    position: absolute;
+    pointer-events: none;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-left: 5px;
+    bottom: 0;
+}
